@@ -21,19 +21,24 @@ class HttpClient
     /**
      * @var float Таймаут соединения
      */
-    const TIMEOUT_CONNECTION = 5.0;
+    const TIMEOUT_CONNECTION = 20.0;
 
     /**
      * Создание класса клиента
      * 
      * @param null|array $proxy
+     * @param null|float $timeout
      * @return GuzzleHttp\Client
      */
-    public function create($proxy = false)
+    public function create($proxy = null, $timeout = null)
     {
+        if ($timeout === null) {
+            $timeout = static::TIMEOUT_CONNECTION;
+        }
+
          return new Client([
-            'base_uri' => 'http://uzel.local/api/v1/',
-            'timeout'  => static::TIMEOUT_CONNECTION,
+            'base_uri' => 'http://84.18.104.172/api/v1/',
+            'timeout'  => $timeout,
             'proxy' => $proxy,
             'allow_redirects' => false,
         ]);
