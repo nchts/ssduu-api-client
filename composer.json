@@ -1,6 +1,7 @@
 {
-    "name:": "nchts/ssduu-api-client",
+    "name": "nchts/ssduu-api-client",
     "type": "project",
+    "description": "API Системы сбора данных с узлов учёта",
     "require": {
         "guzzlehttp/guzzle": "^6.3"
     },
