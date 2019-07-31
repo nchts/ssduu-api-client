@@ -2,6 +2,7 @@
     "name": "nchts/ssduu-api-client",
     "type": "project",
     "description": "API Системы сбора данных с узлов учёта",
+    "minimum-stability": "stable",
     "require": {
         "guzzlehttp/guzzle": "^6.3"
     },
