@@ -2,7 +2,9 @@
     "name": "nchts/ssduu-api-client",
     "type": "project",
     "description": "API Системы сбора данных с узлов учёта",
-    "minimum-stability": "stable",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
         "guzzlehttp/guzzle": "^6.3"
     },
