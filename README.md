@@ -15,6 +15,14 @@
 
 **Authorization: Bearer mFc9dB5f-4.1JqM**
 
+## Установка тестового примера
+
+composer create-project nchts/ssduu-api-client
+
+Запуск :
+
+**php run.php**
+
 ## Аутентификация через API
 
 Формат POST запроса: **/user/login?username={username}&password={password}**
